@@ -16,4 +16,92 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+/* Header */
+header {
+  margin-top: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-item {
+  padding: 1.5rem 2rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: #B8BECD;
+}
+.nav-link.active {
+  color: #202336;
+}
+
+.nav-form {
+  display: flex;
+  align-items: center;
+  grid-gap: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.8rem;
+  outline: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-login {
+  border: 1px solid #FB8F1D;
+  color: #FB8F1D;
+}
+
+.btn-register {
+  background-color: #FB8F1D;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=main.css.map */

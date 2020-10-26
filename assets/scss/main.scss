@@ -168,21 +168,21 @@ nav{
 }
 
 /* Explore */
-.explore-content{
+.section-content{
   display: flex;
   align-items: center;
 
 }
-.explore-img,.explore-description{
+.section-img,.section-description{
   flex: 1 1 50%;
 }
-.explore-description{
+.section-description{
   padding: 0 3rem;
   .btn{
     max-width: 20rem;
   }
 }
-.explore-title{
+.section-title{
   font-size: 3.6rem;
   font-family: "Playfair Display", serif;
   color: $black;

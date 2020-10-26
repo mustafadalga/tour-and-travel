@@ -14,7 +14,8 @@ $st-tropaz:#305C91;
 $gallery:#EEEEEE;
 $concrete:#F3F3F3;
 $topaz:#7D7987;
-
+$tiber:#042521;
+$gunsmoke:#80918E;
 @import "select";
 @import "date-picker";
 *,*:before,*:after{
@@ -192,4 +193,65 @@ nav{
   font-weight:300;
   font-family: 'Mulish', sans-serif;
   margin: 2rem 0;
+}
+
+
+/* Features Destinations */
+.features-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.features-title{
+  color: $black;
+  font-size: 3.6rem;
+  font-family: "Playfair Display", serif;
+}
+.view-all{
+  color: $tree-poppy;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  &:hover{
+    border-bottom:1px solid $tree-poppy;
+  }
+}
+.features-cards{
+
+  display: flex;
+  grid-gap: 2rem;
+}
+.feature-card{
+  position: relative;
+  img{
+    border-radius:1rem;
+  }
+}
+.feature-card-desc{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: $white;
+    border-top-right-radius: .6rem;
+    padding: 1.5rem 1.5rem 0 0;
+}
+.location{
+  display: block;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: $tiber;
+}
+.country{
+  display: block;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: $gunsmoke;
+  font-weight: bold;
 }

@@ -403,4 +403,70 @@ nav {
   margin: 2rem 0;
 }
 
+/* Features Destinations */
+.features-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.features-title {
+  color: #000000;
+  font-size: 3.6rem;
+  font-family: "Playfair Display", serif;
+}
+
+.view-all {
+  color: #FB8F1D;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.view-all:hover {
+  border-bottom: 1px solid #FB8F1D;
+}
+
+.features-cards {
+  display: flex;
+  grid-gap: 2rem;
+}
+
+.feature-card {
+  position: relative;
+}
+.feature-card img {
+  border-radius: 1rem;
+}
+
+.feature-card-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  border-top-right-radius: 0.6rem;
+  padding: 1.5rem 1.5rem 0 0;
+}
+
+.location {
+  display: block;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: #042521;
+}
+
+.country {
+  display: block;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: #80918E;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */

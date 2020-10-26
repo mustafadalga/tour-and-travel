@@ -408,40 +408,50 @@ nav {
 }
 
 /* Features Destinations */
-.features-header {
+.section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
 }
 
-.features-title {
+.section-head-title {
   color: #000000;
   font-size: 3.6rem;
   font-family: "Playfair Display", serif;
 }
 
-.view-all {
+.view-all, .read-more {
   color: #FB8F1D;
   font-size: 1.7rem;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: border-bottom 0.5s;
+  -moz-transition: border-bottom 0.5s;
+  -ms-transition: border-bottom 0.5s;
+  -o-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
 }
-.view-all:hover {
+.view-all:hover, .read-more:hover {
   border-bottom: 1px solid #FB8F1D;
+  -webkit-transition: border-bottom 0.5s;
+  -moz-transition: border-bottom 0.5s;
+  -ms-transition: border-bottom 0.5s;
+  -o-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
 }
 
 .features-cards {
   display: flex;
-  grid-gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 1.5rem;
 }
 
 .feature-card {
+  flex: 0 1 calc(25% - 1.5rem);
+  min-width: 20rem;
+  cursor: pointer;
   position: relative;
 }
 .feature-card img {
@@ -566,6 +576,47 @@ nav {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/* Trending Stories */
+.stories {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 3rem 1.5rem;
+  justify-content: center;
+}
+
+.story {
+  flex: 0 1 calc(25% - 1.5rem);
+  min-width: 20rem;
+  cursor: pointer;
+}
+
+.story-img {
+  max-height: 20rem;
+}
+
+.story-title {
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.7rem;
+  color: #000000;
+}
+
+.story-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #7D7987;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 1rem 0 2rem;
+}
+
+.read-more {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

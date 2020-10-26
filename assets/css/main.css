@@ -12,7 +12,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border-width: 0 2px 0 2px;
+  border-width: 0 1px 0 1px;
   border-style: solid;
   border-color: #AFB0B9;
   border-radius: 0.6rem;
@@ -24,17 +24,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 22px;
+  padding: 0 1.5rem;
   font-weight: 300;
-  color: #3b3b3b;
+  color: #4A4C53;
   height: 60px;
-  line-height: 60px;
-  background: #ffffff;
+  background: #FFFFFF;
   cursor: pointer;
-  border-width: 2px 0 2px 0;
+  border-width: 1px 0 1px 0;
   border-style: solid;
   border-color: #AFB0B9;
   border-radius: 0.6rem;
+}
+.custom-select__trigger span {
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .custom-options {
@@ -43,7 +48,7 @@
   top: 100%;
   left: 0;
   right: 0;
-  border: 2px solid #AFB0B9;
+  border: 1px solid #AFB0B9;
   border-top: 0;
   background: #fff;
   transition: all 0.5s;
@@ -58,35 +63,44 @@
   visibility: visible;
   pointer-events: all;
 }
+.custom-select.open .date-arrow::before {
+  left: -1px;
+  transform: rotate(-45deg);
+}
+.custom-select.open .date-arrow::after {
+  left: 5px;
+  transform: rotate(45deg);
+}
 
 .custom-option {
   position: relative;
   display: block;
   padding: 0 22px 0 22px;
   font-weight: 300;
-  color: #3b3b3b;
-  line-height: 60px;
+  color: #4A4C53;
+  line-height: 40px;
   cursor: pointer;
   transition: all 0.5s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
-
 .custom-option:hover {
   cursor: pointer;
-  background-color: #b2b2b2;
+  background-color: #B2B2B2;
 }
-
 .custom-option.selected {
-  color: #ffffff;
-  background-color: #305c91;
+  color: #FFFFFF;
+  background-color: #305C91;
 }
 
-.arrow {
+.date-arrow {
   position: relative;
   height: 10px;
   width: 10px;
 }
-
-.arrow::before, .arrow::after {
+.date-arrow::before, .date-arrow::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -94,27 +108,99 @@
   height: 100%;
   transition: all 0.5s;
 }
-
-.arrow::before {
+.date-arrow::before {
   left: -1px;
   transform: rotate(45deg);
   background-color: #4A4C53;
 }
-
-.arrow::after {
+.date-arrow::after {
   left: 5px;
   transform: rotate(-45deg);
   background-color: #4A4C53;
 }
 
-.open .arrow::before {
-  left: -1px;
-  transform: rotate(-45deg);
+.date-picker {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #FFFFFF;
+  border: 1px solid #AFB0B9;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Saira", Arial, Helvetica, sans-serif;
+}
+.date-picker:hover {
+  background-color: #F3F3F3;
 }
 
-.open .arrow::after {
-  left: 5px;
-  transform: rotate(45deg);
+.selected-date {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4A4C53;
+  font-size: 1.5rem;
+}
+
+.dates {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+}
+.dates.active {
+  display: block;
+}
+.dates .arrows {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4A4C53;
+  font-size: 20px;
+}
+.dates .arrows:hover {
+  background-color: #F3F3F3;
+}
+.dates .arrows:active {
+  background-color: #FB8F1D;
+  color: #FFFFFF;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #EEEEEE;
+}
+.month .mth {
+  font-size: 1.2rem;
+}
+
+.days {
+  border-color: #EEEEEE;
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 200px;
+}
+.days .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4A4C53;
+  font-size: 1.5rem;
+}
+.days .day.selected {
+  background-color: #FB8F1D;
+  color: #FFFFFF;
 }
 
 *, *:before, *:after {

@@ -1,0 +1,80 @@
+.date-picker {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background-color: $white;
+	border: 1px solid $bombay;
+	border-radius: .6rem;
+	cursor: pointer;
+	user-select: none;
+	font-family: 'Saira', Arial, Helvetica, sans-serif;
+	&:hover{
+		background-color: $concrete;
+	}
+}
+.selected-date {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $abbey;
+	font-size: 1.5rem;
+}
+.dates {
+	display: none;
+	position: absolute;
+	top:calc(100% + 1px);
+	left: 0;
+	right: 0;
+	background-color: $white;
+	&.active{
+		display: block;
+	}
+	.arrows{
+		width: 35px;
+		height: 35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color:$abbey;
+		font-size: 20px;
+		&:hover{
+			background-color: #F3F3F3;
+		}
+		&:active{
+			background-color: $tree-poppy;
+			color: $white;
+		}
+	}
+}
+.month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid $gallery;
+	.mth{
+		font-size: 1.2rem;
+	}
+}
+
+.days {
+	border-color: $gallery;
+	border-width: 1px;
+	border-style: solid;
+    border-top: none;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 200px;
+	.day {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $abbey;
+		font-size: 1.5rem;
+		&.selected{
+			background-color: $tree-poppy;
+			color: $white;
+		}
+	}
+}

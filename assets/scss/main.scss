@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
 $black:#000000;
 $white:#FFFFFF;
 $heather:#B8BECD;
@@ -8,7 +9,13 @@ $ebony-clay:#202336;
 $tree-poppy:#FB8F1D;
 $abbey:#4A4C53;
 $bombay:#AFB0B9;
+$silver-chalice:#B2B2B2;
+$st-tropaz:#305C91;
+$gallery:#EEEEEE;
+$concrete:#F3F3F3;
+
 @import "select";
+@import "date-picker";
 *,*:before,*:after{
   margin: 0;
   padding: 0;

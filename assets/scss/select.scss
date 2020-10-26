@@ -9,7 +9,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border-width: 0 2px 0 2px;
+  border-width: 0 1px 0 1px;
   border-style: solid;
   border-color:$bombay;
   border-radius: .6rem;
@@ -20,17 +20,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 22px;
+  padding: 0 1.5rem;
   font-weight: 300;
-  color: #3b3b3b;
+  color: $abbey;
   height: 60px;
-  line-height: 60px;
-  background: #ffffff;
+  background: $white;
   cursor: pointer;
-  border-width: 2px 0 2px 0;
+  border-width: 1px 0 1px 0;
   border-style: solid;
   border-color: $bombay;
   border-radius: .6rem;
+  span{
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .custom-options {
   position: absolute;
@@ -38,7 +43,7 @@
   top: 100%;
   left: 0;
   right: 0;
-  border: 2px solid $bombay;
+  border: 1px solid $bombay;
   border-top: 0;
   background: #fff;
   transition: all 0.5s;
@@ -47,57 +52,67 @@
   pointer-events: none;
   z-index: 2;
 }
-.custom-select.open .custom-options {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
+.custom-select.open  {
+  .custom-options{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .date-arrow{
+    &::before {
+      left: -1px;
+      transform: rotate(-45deg);
+    }
+    &::after {
+      left: 5px;
+      transform: rotate(45deg);
+    }
+  }
 }
 .custom-option {
   position: relative;
   display: block;
   padding: 0 22px 0 22px;
   font-weight: 300;
-  color: #3b3b3b;
-  line-height: 60px;
+  color: $abbey;
+  line-height: 40px;
   cursor: pointer;
   transition: all 0.5s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  &:hover {
+    cursor: pointer;
+    background-color: $silver-chalice;
+  }
+  &.selected {
+    color: $white;
+    background-color: $st-tropaz;
+  }
 }
-.custom-option:hover {
-  cursor: pointer;
-  background-color: #b2b2b2;
-}
-.custom-option.selected {
-  color: #ffffff;
-  background-color: #305c91;
-}
-.arrow {
+.date-arrow {
   position: relative;
   height:10px;
   width: 10px;
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0.15rem;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  &::before {
+    left: -1px;
+    transform: rotate(45deg);
+    background-color:$abbey;
+  }
+  &::after {
+    left: 5px;
+    transform: rotate(-45deg);
+    background-color:$abbey;
+  }
 }
-.arrow::before, .arrow::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  width: 0.15rem;
-  height: 100%;
-  transition: all 0.5s;
-}
-.arrow::before {
-  left: -1px;
-  transform: rotate(45deg);
-  background-color:$abbey;
-}
-.arrow::after {
-  left: 5px;
-  transform: rotate(-45deg);
-  background-color:$abbey;
-}
-.open .arrow::before {
-  left: -1px;
-  transform: rotate(-45deg);
-}
-.open .arrow::after {
-  left: 5px;
-  transform: rotate(45deg);
-}
+
+

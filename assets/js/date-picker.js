@@ -1,3 +1,6 @@
+/*
+ https://github.com/TylerPottsDev/custom-date-picker
+ */
 const date_picker_element = document.querySelector('.date-picker');
 const selected_date_element = document.querySelector('.date-picker .selected-date');
 const dates_element = document.querySelector('.date-picker .dates');
@@ -117,7 +120,6 @@ function formatDate (d) {
 }
 document.addEventListener('click',(e)=>{
 	if(!date_picker_element.contains(e.target)){
-		console.log(1)
 		dates_element.classList.remove('active')
 	}
 })

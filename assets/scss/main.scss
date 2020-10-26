@@ -13,6 +13,7 @@ $silver-chalice:#B2B2B2;
 $st-tropaz:#305C91;
 $gallery:#EEEEEE;
 $concrete:#F3F3F3;
+$topaz:#7D7987;
 
 @import "select";
 @import "date-picker";
@@ -42,7 +43,7 @@ a {
   padding: 0 1.5rem;
 }
 section {
-  padding: 5rem 0;
+  padding: 8rem 0;
 }
 body{
   background-color: $white;
@@ -72,6 +73,8 @@ nav{
 .nav-logo{
   width: 4rem;
   height: 4rem;
+  min-height: 4rem;
+  min-width: 4rem;
 }
 .nav-right{
   display: flex;
@@ -109,6 +112,9 @@ nav{
 
 
 /* Hero */
+.hero{
+  padding-top: 5rem;
+}
 .hero-content{
   display: flex;
   align-items: center;
@@ -156,8 +162,34 @@ nav{
   background-color: $tree-poppy;
   color: $white;
 }
-
-
 .hero-img{
   flex: 1 1 50%;
+}
+
+/* Explore */
+.explore-content{
+  display: flex;
+  align-items: center;
+
+}
+.explore-img,.explore-description{
+  flex: 1 1 50%;
+}
+.explore-description{
+  padding: 0 3rem;
+  .btn{
+    max-width: 20rem;
+  }
+}
+.explore-title{
+  font-size: 3.6rem;
+  font-family: "Playfair Display", serif;
+  color: $black;
+}
+.p-description{
+  color: $topaz;
+  font-size: 1.7rem;
+  font-weight:300;
+  font-family: 'Mulish', sans-serif;
+  margin: 2rem 0;
 }

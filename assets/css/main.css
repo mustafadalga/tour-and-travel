@@ -235,7 +235,7 @@ a {
 }
 
 section {
-  padding: 5rem 0;
+  padding: 8rem 0;
 }
 
 body {
@@ -268,6 +268,8 @@ nav {
 .nav-logo {
   width: 4rem;
   height: 4rem;
+  min-height: 4rem;
+  min-width: 4rem;
 }
 
 .nav-right {
@@ -310,6 +312,10 @@ nav {
 }
 
 /* Hero */
+.hero {
+  padding-top: 5rem;
+}
+
 .hero-content {
   display: flex;
   align-items: center;
@@ -364,6 +370,37 @@ nav {
 
 .hero-img {
   flex: 1 1 50%;
+}
+
+/* Explore */
+.explore-content {
+  display: flex;
+  align-items: center;
+}
+
+.explore-img, .explore-description {
+  flex: 1 1 50%;
+}
+
+.explore-description {
+  padding: 0 3rem;
+}
+.explore-description .btn {
+  max-width: 20rem;
+}
+
+.explore-title {
+  font-size: 3.6rem;
+  font-family: "Playfair Display", serif;
+  color: #000000;
+}
+
+.p-description {
+  color: #7D7987;
+  font-size: 1.7rem;
+  font-weight: 300;
+  font-family: "Mulish", sans-serif;
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

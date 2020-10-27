@@ -575,6 +575,7 @@ nav {
 }
 .direction .arrow {
   border: 2px solid #000000;
+  color: #000000;
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
@@ -585,6 +586,11 @@ nav {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+}
+.direction .arrow.passive {
+  cursor: default;
+  border-color: #D7D7D7;
+  color: #D7D7D7;
 }
 
 /* Trending Stories */

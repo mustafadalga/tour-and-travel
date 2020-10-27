@@ -19,6 +19,7 @@ $tiber:#042521;
 $gunsmoke:#80918E;
 $gray:#848484;
 $athens-gray:#F9F9FB;
+$alto:#D7D7D7;
 
 @import "select";
 @import "date-picker";
@@ -301,6 +302,7 @@ nav{
     transition: 1s all;
   }
 
+
 }
 .testimonial-text{
   flex: 1 1 60%;
@@ -355,6 +357,7 @@ nav{
   padding: 1rem;
   .arrow{
     border: 2px solid $black;
+    color: $black;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
@@ -365,6 +368,11 @@ nav{
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
+    &.passive{
+      cursor: default;
+      border-color:$alto;
+      color: $alto;
+    }
   }
 }
 

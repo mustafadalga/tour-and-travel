@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600&display=swap");
 /* Resource:https://andrejgajdos.com/custom-select-dropdown/ */
 .custom-select-wrapper {
@@ -92,7 +92,7 @@
 }
 .custom-option.selected {
   color: #FFFFFF;
-  background-color: #305C91;
+  background-color: rgba(251, 143, 29, 0.85);
 }
 
 .date-arrow {
@@ -171,7 +171,7 @@
   background-color: #F3F3F3;
 }
 .dates .arrows:active {
-  background-color: #FB8F1D;
+  background-color: #fb8f1d;
   color: #FFFFFF;
 }
 
@@ -202,7 +202,7 @@
   font-size: 1.5rem;
 }
 .days .day.selected {
-  background-color: #FB8F1D;
+  background-color: #fb8f1d;
   color: #FFFFFF;
 }
 
@@ -251,7 +251,7 @@ body {
   border: none;
   outline: none;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,12 +290,18 @@ nav {
 .nav-link {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #B8BECD;
+  transition: all 0.3s ease-in-out;
+  width: 80%;
+  max-width: 100%;
 }
 .nav-link.active {
   color: #202336;
-  font-weight: bold;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #fb8f1d;
 }
 
 .nav-form {
@@ -305,12 +311,12 @@ nav {
 }
 
 .btn-login {
-  border: 1px solid #FB8F1D;
-  color: #FB8F1D;
+  border: 1px solid #fb8f1d;
+  color: #fb8f1d;
 }
 
 .btn-register {
-  background-color: #FB8F1D;
+  background-color: #fb8f1d;
   color: #FFFFFF;
 }
 
@@ -367,8 +373,9 @@ nav {
 .btn-explore {
   margin-top: 3rem;
   padding: 1.5rem 6rem;
-  background-color: #FB8F1D;
+  background-color: #fb8f1d;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .hero-img {
@@ -422,23 +429,26 @@ nav {
 }
 
 .view-all, .read-more {
-  color: #FB8F1D;
+  color: #fb8f1d;
   font-size: 1.7rem;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  -webkit-transition: border-bottom 0.5s;
-  -moz-transition: border-bottom 0.5s;
-  -ms-transition: border-bottom 0.5s;
-  -o-transition: border-bottom 0.5s;
-  transition: border-bottom 0.5s;
+  transition: 0.2s;
 }
-.view-all:hover, .read-more:hover {
-  border-bottom: 1px solid #FB8F1D;
-  -webkit-transition: border-bottom 0.5s;
-  -moz-transition: border-bottom 0.5s;
-  -ms-transition: border-bottom 0.5s;
-  -o-transition: border-bottom 0.5s;
-  transition: border-bottom 0.5s;
+
+.view-all {
+  width: 10rem;
+}
+.view-all span {
+  transition: all 0.3s ease-in-out;
+}
+.view-all:hover span {
+  width: 2rem;
+  padding-left: 0.5rem;
+}
+
+.read-more:hover {
+  border-bottom: 1px solid #fb8f1d;
 }
 
 .features-cards {
@@ -480,7 +490,7 @@ nav {
   font-size: 1.5rem;
   font-family: "Inter", sans-serif;
   color: #80918E;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 /* Testimonials */
@@ -507,7 +517,6 @@ nav {
 
 .testimonial-text {
   flex: 1 1 60%;
-  padding: 0 3rem;
 }
 
 .rating {
@@ -600,6 +609,7 @@ nav {
   margin-top: 1rem;
   font-family: "Inter", sans-serif;
   font-size: 1.7rem;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -622,7 +632,7 @@ nav {
 /* Footer */
 .footer {
   background-color: #F9F9FB;
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
 }
 
 .footer-content {
@@ -685,7 +695,7 @@ nav {
   display: block;
 }
 .nav-footer-link:hover {
-  color: #FB8F1D;
+  color: #fb8f1d;
 }
 
 .social-media {

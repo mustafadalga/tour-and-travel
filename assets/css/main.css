@@ -743,6 +743,8 @@ nav.open .nav-right {
 .nav-footer {
   flex: 1 1 60%;
   display: flex;
+  flex-wrap: wrap;
+  grid-gap: 3rem 1.5rem;
   justify-content: space-between;
 }
 
@@ -830,6 +832,35 @@ nav.open .nav-right {
   /* Features */
   .feature-card, .story {
     min-width: 30rem;
+  }
+
+  /*Footer*/
+  .nav-footer {
+    order: 1;
+  }
+
+  .footer-text {
+    flex-basis: 100%;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .footer-desc {
+    padding: 0 2rem;
+    margin: 0;
+    width: calc(100% - 4rem);
+  }
+
+  .copyright {
+    margin-top: 3rem;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .social-media {
+    order: 3;
   }
 }
 @media screen and (max-width: 768px) {

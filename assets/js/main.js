@@ -190,3 +190,21 @@ next.addEventListener('click',()=>{
     toggleArrowPassive();
     active.style.marginLeft=`${index}00%`;
 })
+
+
+
+/* Scrool To Top*/
+var arrowUp=document.querySelector('.arrow-up');
+arrowUp.addEventListener('click',()=>{
+    console.log(11)
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+})
+window.addEventListener('scroll',()=>{
+    console.log(document.documentElement.scrollTop)
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        arrowUp.style.opacity = "1";
+    } else {
+        arrowUp.style.opacity = "0";
+    }
+})

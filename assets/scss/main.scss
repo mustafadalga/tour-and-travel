@@ -30,6 +30,7 @@ $alto:#D7D7D7;
 }
 html{
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 img{
   width: 100%;
@@ -560,6 +561,36 @@ nav{
   img{
     width: auto;
     max-height: 2.5rem;
+  }
+}
+
+
+/*Back to Top Arrow*/
+.arrow-up{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: $tree-poppy;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  font-size: 3.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  i{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: $white;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+  }
+  &:hover{
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
   }
 }
 

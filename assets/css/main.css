@@ -828,7 +828,7 @@ nav.open .nav-right {
 }
 @media screen and (max-width: 900px) {
   /* Features */
-  .feature-card {
+  .feature-card, .story {
     min-width: 30rem;
   }
 }
@@ -903,7 +903,7 @@ nav.open .nav-right {
 }
 @media screen and (max-width: 700px) {
   /* Features */
-  .feature-card {
+  .feature-card, .story {
     flex-basis: calc(50% - 1.5rem);
     min-width: 20rem;
   }
@@ -929,8 +929,8 @@ nav.open .nav-right {
 }
 @media screen and (max-width: 450px) {
   /* Features */
-  .feature-card {
-    flex-basis: 70%;
+  .feature-card, .story {
+    flex-basis: 80%;
   }
 }
 

@@ -244,7 +244,6 @@ nav{
 .section-content{
   display: flex;
   align-items: center;
-
 }
 .section-img,.section-text{
   flex: 1 1 50%;
@@ -628,6 +627,31 @@ nav{
   .form-control{
     min-width: 20rem;
   }
+
+  /* Explore  */
+  .section-content{
+    flex-direction: column;
+    align-items: initial;
+  }
+  .section-text,.section-img{
+    flex: initial;
+  }
+  .section-text{
+    order: 1;
+    text-align: center;
+    .btn{
+      margin: 3rem auto 0;
+    }
+  }
+  .section-title{
+    font-size: 3rem;
+  }
+  .section-img{
+    order:2;
+    width: 70%;
+    margin: 3rem auto 0;
+  }
+
 }
 @media screen  and (max-width: 500px){
   /*Hero */

@@ -865,6 +865,34 @@ nav.open .nav-right {
   .form-control {
     min-width: 20rem;
   }
+
+  /* Explore  */
+  .section-content {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .section-text, .section-img {
+    flex: initial;
+  }
+
+  .section-text {
+    order: 1;
+    text-align: center;
+  }
+  .section-text .btn {
+    margin: 3rem auto 0;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-img {
+    order: 2;
+    width: 70%;
+    margin: 3rem auto 0;
+  }
 }
 @media screen and (max-width: 500px) {
   /*Hero */

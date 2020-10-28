@@ -951,6 +951,19 @@ nav.open .nav-right {
     text-align: center;
     margin-top: 1rem;
   }
+
+  /*Testimonials */
+  .testimonial-description {
+    font-size: 2rem;
+  }
+
+  .author-name {
+    font-size: 1.8rem;
+  }
+
+  .author-position {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 500px) {
   /*Hero */

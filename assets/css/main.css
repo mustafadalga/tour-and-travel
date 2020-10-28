@@ -639,6 +639,7 @@ nav.open .nav-right {
   border: 2px solid #000000;
   color: #000000;
   border-radius: 50%;
+  outline: none;
   width: 4rem;
   height: 4rem;
   cursor: pointer;

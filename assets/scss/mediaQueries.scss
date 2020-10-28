@@ -1,0 +1,164 @@
+
+@media screen and (max-width: 1000px) {
+  .hamburger-menu-wrap,.nav-close-icon{
+    display: block;
+  }
+  .nav-right{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:30rem;
+    height: 100vh;
+    background-color: $athens-gray;
+    z-index: 2;
+    flex-direction: column;
+    transform: translateX(40rem);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-menu{
+    flex-direction: column;
+  }
+  .nav-link{
+    color: $gray;
+  }
+  .nav-form{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+    .btn{
+      width: 15rem;
+    }
+  }
+}
+@media screen and (max-width:900px) {
+  /* Features */
+  .feature-card,.story{
+    min-width: 30rem;
+  }
+
+  /*Footer*/
+  .nav-footer{
+    order: 1;
+  }
+  .footer-text{
+    flex-basis: 100%;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .footer-desc{
+    padding:0 2rem;
+    margin: 0;
+    width:calc(100% - 4rem);
+  }
+  .copyright{
+    margin-top: 3rem;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .social-media{
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*Hero */
+  .hero-content{
+    flex-direction: column;
+    align-items: initial;
+  }
+  .hero-form{
+    flex-basis: 100%;
+    padding: 0;
+    .btn{
+      margin:3rem auto 0 auto;
+    }
+  }
+  .hero-title{
+    font-size: 4.8rem;
+    text-align: center;
+  }
+  .hero-subtitle{
+    text-align: center;
+    &:after{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .hero-img{
+    display: none;
+  }
+  .selected-date{
+    justify-content: initial;
+    padding-left: 2rem;
+  }
+  .form-control{
+    min-width: 20rem;
+  }
+
+  /* Explore  */
+  .section-content{
+    flex-direction: column;
+    align-items: initial;
+  }
+  .section-text,.section-img{
+    flex: initial;
+  }
+  .section-text{
+    order: 1;
+    text-align: center;
+    .btn{
+      margin: 3rem auto 0;
+    }
+  }
+  .section-title{
+    font-size: 3rem;
+  }
+  .section-img{
+    order:2;
+    width: 70%;
+    margin: 3rem auto 0;
+  }
+
+}
+@media screen  and (max-width: 700px){
+  /* Features */
+  .feature-card,.story{
+    flex-basis: calc(50% - 1.5rem);
+    min-width: 20rem;
+  }
+  .section-header{
+    flex-direction: column;
+  }
+  .section-head-title{
+    font-size: 3rem;
+  }
+  .view-all{
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  /*Testimonials */
+  .testimonial-description{
+    font-size: 2rem;
+  }
+  .author-name{
+    font-size: 1.8rem;
+  }
+  .author-position{
+    font-size: 1.5rem;
+  }
+}
+@media screen  and (max-width: 500px){
+  /*Hero */
+  .hero-title{
+    font-size: 4rem;
+  }
+}
+@media screen  and (max-width: 450px){
+  /* Features */
+  .feature-card,.story{
+    flex-basis: 80%;
+  }
+}
